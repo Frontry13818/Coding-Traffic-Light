@@ -1,0 +1,99 @@
+// inisialisasi PIN
+int LedMerah1 = 11;
+int LedKuning1 = 12;
+int LedHijau1 = 13;
+int LedMerah2 = 5;
+int LedKuning2 = 6;
+int LedHijau2 = 7;
+int LedMerah3 = 3;
+int LedKuning3 = 2;
+int LedHijau3 = 1;
+
+void setup() {
+  // inisialisasi PIN Digital 13(LedMerah), 12(LedKuning), 11(LedHijau) sebagai output
+  pinMode (LedMerah1, OUTPUT);
+  pinMode (LedKuning1, OUTPUT);
+  pinMode (LedHijau1, OUTPUT);
+  pinMode (LedMerah2, OUTPUT);
+  pinMode (LedKuning2, OUTPUT);
+  pinMode (LedHijau2, OUTPUT);
+  pinMode (LedMerah3, OUTPUT);
+  pinMode (LedKuning3, OUTPUT);
+  pinMode (LedHijau3, OUTPUT);
+  
+}
+
+void loop() {
+  // KASUS PERTAMA LAMPU 1 HIJAU LAMPU LAIN MERAH
+  digitalWrite (LedMerah1, LOW); 
+  digitalWrite (LedKuning1, LOW);
+  digitalWrite (LedHijau1, HIGH);
+  digitalWrite (LedMerah2, HIGH); 
+  digitalWrite (LedKuning2, LOW);
+  digitalWrite (LedHijau2, LOW);
+  digitalWrite (LedMerah3, HIGH); 
+  digitalWrite (LedKuning3, LOW);
+  digitalWrite (LedHijau3, LOW);
+  delay (9000);
+  
+  // kasus kedua lampu kuning led 1 DAN 2 menyala
+  digitalWrite (LedMerah1, LOW); 
+  digitalWrite (LedKuning1, HIGH);
+  digitalWrite (LedHijau1, LOW);
+  digitalWrite (LedMerah2, LOW); 
+  digitalWrite (LedKuning2, HIGH);
+  digitalWrite (LedHijau2, LOW);
+  digitalWrite (LedMerah3, HIGH); 
+  digitalWrite (LedKuning3, LOW);
+  digitalWrite (LedHijau3, LOW);
+  delay (1000);
+  
+  // KASUS KE 3. LAMPU 2 HIJAU YANG LAIN MERAH
+  digitalWrite (LedMerah1, HIGH); 
+  digitalWrite (LedKuning1, LOW);
+  digitalWrite (LedHijau1, LOW);
+  digitalWrite (LedMerah2, LOW); 
+  digitalWrite (LedKuning2, LOW);
+  digitalWrite (LedHijau2, HIGH);
+  digitalWrite (LedMerah3, HIGH); 
+  digitalWrite (LedKuning3, LOW);
+  digitalWrite (LedHijau3, LOW);
+  delay (9000);
+  
+  // LedKuning LED 2 3 MENYALA
+  digitalWrite (LedMerah1, HIGH); 
+  digitalWrite (LedKuning1, LOW);
+  digitalWrite (LedHijau1, LOW);
+  digitalWrite (LedMerah2, LOW); 
+  digitalWrite (LedKuning2, HIGH);
+  digitalWrite (LedHijau2, LOW);
+  digitalWrite (LedMerah3, LOW); 
+  digitalWrite (LedKuning3, HIGH);
+  digitalWrite (LedHijau3, LOW);
+  delay (1000);
+
+//KASUS 4. LAMPU 3 HIJAU MENYALA 
+  digitalWrite (LedMerah1, HIGH); 
+  digitalWrite (LedKuning1, LOW);
+  digitalWrite (LedHijau1, LOW);
+  digitalWrite (LedMerah2, HIGH); 
+  digitalWrite (LedKuning2, LOW);
+  digitalWrite (LedHijau2, LOW);
+  digitalWrite (LedMerah3, LOW); 
+  digitalWrite (LedKuning3, LOW);
+  digitalWrite (LedHijau3, HIGH);
+  delay (9000);
+
+    // LedKuning 3 DAN 1 MENYALA
+  digitalWrite (LedMerah1, LOW); 
+  digitalWrite (LedKuning1, HIGH);
+  digitalWrite (LedHijau1, LOW);
+  digitalWrite (LedMerah2, HIGH); 
+  digitalWrite (LedKuning2, LOW);
+  digitalWrite (LedHijau2, LOW);
+  digitalWrite (LedMerah3, LOW); 
+  digitalWrite (LedKuning3, HIGH);
+  digitalWrite (LedHijau3, LOW);
+  delay (1000);
+  
+}
